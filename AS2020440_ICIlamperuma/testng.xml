@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="C:/Users/THIS PC/Desktop/Msc/Japura/SeleniumMaven">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+           <class name="org.example.Main">
+               <methods>
+                   <include name="Test"/>
+               </methods>
+           </class>
+            <class name="org.example.select_phone">
+                <methods>
+                    <include name="navigateUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="dropDownSelection"/>
+                    <include name="searchMobilePhone"/>
+                    <include name="selectFirstPhone"/>
+                </methods>
+            </class>
+            <class name="org.example.checkout">
+                <methods>
+                    <include name="getName"/>
+                    <include name="getPrice"/>
+                    <include name="setPlug"/>
+                    <include name="setColor"/>
+                    <include name="addCart"/>
+                    <include name="getCheckTitle"/>
+                    <include name="getCheckPrice"/>
+                    <include name="Checkout"/>
+                    <include name="AsGuest"/>
+                    <include name="quite"/>
+         </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
